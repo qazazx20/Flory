@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./include/include.css">
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <title>Flory</title>
+</head>
+
+<body>
+    <!-- header 연결 -->
+    <header data-include="../include/header.html"></header>
+
+    <!-- 이미지 슬라이드-->
+    <section class="slideContainer">
+        <div class="slide">
+            <img src="images/main1.jpg">
+            <img src="images/main2.jpg">
+            <img src="images/main3.jpg">
+            <img src="images/main4.jpg">
+
+            <!-- 화살표 표시 -->
+            <div class="slideArrow">
+                <button class="prev">&lang;</button>
+                <button class="next">&rang;</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 새 상품 -->
+    <section class="newProductContainer">
+        <div id="productTitle">NEW Product</div>
+        <div class="newProduct">
+            <ul>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/1.jpg"></a></li>
+                    <li id="name"><a href="#">동백</a></li>
+                    <li id="price">11,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/2.jpg"></a></li>
+                    <li id="name"><a href="#">백합</a></li>
+                    <li id="price">12,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/3.jpg"></a></li>
+                    <li id="name"><a href="#">수선화</a></li>
+                    <li id="price">13,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/4.jpg"></a></li>
+                    <li id="name"><a href="#">안개꽃</a></li>
+                    <li id="price">14,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/5.jpg"></a></li>
+                    <li id="name"><a href="#">안스리움</a></li>
+                    <li id="price">15,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/6.jpg"></a></li>
+                    <li id="name"><a href="#">글라디올러스</a></li>
+                    <li id="price">16,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/7.jpg"></a></li>
+                    <li id="name"><a href="#">아미초</a></li>
+                    <li id="price">17,000원</li>
+                </div>
+                <div class="item">
+                    <li><a href="#"><img src="images/goods/8.jpg"></a></li>
+                    <li id="name"><a href="#">후록스</a></li>
+                    <li id="price">18,000원</li>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- 리뷰
+    <section class="reviewContainer">
+        <div id="reviewTitle">BEST REVIEW</div>
+        <div class="review">
+
+        </div>
+    </section> -->
+
+
+    <!-- footer 연결 -->
+    <footer data-include="../include/footer.html"></footer>
+
+</body>
+
+<script src="../include/include.js"></script>
+<script src="../js/index.js"></script>
+
+
+</html>
