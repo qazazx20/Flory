@@ -12,11 +12,12 @@
 body {
     width: 100%;
     height: 100vh;
+    background-color: rgb(255, 248, 234);
 }
 
 section {
     width: 80vw;
-    margin: 5% auto;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
 }
@@ -30,17 +31,14 @@ section {
     }
 
     .newProductContainer .newProduct ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: (3, 1fr);
 
     }
 
     .newProductContainer .newProduct .item {
         width: 100%;
-
     }
-
 }
 
 /* 모바일 */
@@ -50,9 +48,8 @@ section {
     }
 
     .newProductContainer .newProduct ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
 
@@ -63,7 +60,7 @@ section {
     height: 30rem;
     position: relative;
     display: flex;
-    margin: 0 auto;
+    margin: 5% auto;
     justify-content: center;
     align-content: center;
 }
@@ -87,7 +84,6 @@ section {
 }
 
 .slideContainer .slide img:not(:first-child) {
-    top: 0;
     left: -100%;
 }
 
@@ -116,6 +112,7 @@ section {
 }
 
 /* 슬라이드 이동 */
+/* 왼쪽 화면 밖으로 */
 @keyframes next1 {
     from {
         left: 0%
@@ -136,6 +133,7 @@ section {
     }
 }
 
+/* 오른쪽 화면 밖으로 */
 @keyframes prev1 {
     from {
         left: 0%
@@ -166,18 +164,14 @@ section {
 
 .newProduct ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .newProduct img {
     width: 90%;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
     margin: 3% 0;
-}
-
-.newProduct .item li:first-child {
-    overflow: hidden;
 }
 
 .newProduct img:hover {
@@ -185,11 +179,13 @@ section {
     transform: scale(1.1);
 }
 
-.newProduct .item #name {
+.newProduct .mainItem #name {
     font-weight: bold;
-    font-size: 3.0rem;
+    font-size: 2.5rem;
 }
 
-.newProduct .item #price {
+.newProduct .mainItem #price {
     font-size: 1.5rem;
 }
+
+

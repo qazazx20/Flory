@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./include/include.css">
+    <link rel="stylesheet" href="../include/include.css">
+    <link rel="stylesheet" href="styles/index.css">
 
     <!-- favicon  -->
-    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -32,20 +32,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <!-- include -->
+
     <title>Flory</title>
+
 </head>
 
 <body>
     <!-- header 연결 -->
-    <header data-include="../include/header.html"></header>
+    <header data-include="include/header.html"></header> <hr>
 
     <!-- 이미지 슬라이드-->
     <section class="slideContainer">
         <div class="slide">
+            <img src="images/main0.jpg">
             <img src="images/main1.jpg">
             <img src="images/main2.jpg">
             <img src="images/main3.jpg">
-            <img src="images/main4.jpg">
 
             <!-- 화살표 표시 -->
             <div class="slideArrow">
@@ -61,42 +65,42 @@
         <div id="productTitle">NEW Product</div>
         <div class="newProduct">
             <ul>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/1.jpg"></a></li>
                     <li id="name"><a href="#">동백</a></li>
                     <li id="price">11,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/2.jpg"></a></li>
                     <li id="name"><a href="#">백합</a></li>
                     <li id="price">12,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/3.jpg"></a></li>
                     <li id="name"><a href="#">수선화</a></li>
                     <li id="price">13,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/4.jpg"></a></li>
                     <li id="name"><a href="#">안개꽃</a></li>
                     <li id="price">14,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/5.jpg"></a></li>
                     <li id="name"><a href="#">안스리움</a></li>
                     <li id="price">15,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/6.jpg"></a></li>
                     <li id="name"><a href="#">글라디올러스</a></li>
                     <li id="price">16,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/7.jpg"></a></li>
                     <li id="name"><a href="#">아미초</a></li>
                     <li id="price">17,000원</li>
                 </div>
-                <div class="item">
+                <div class="mainItem">
                     <li><a href="#"><img src="images/goods/8.jpg"></a></li>
                     <li id="name"><a href="#">후록스</a></li>
                     <li id="price">18,000원</li>
@@ -104,6 +108,7 @@
             </ul>
         </div>
     </section>
+
 
 
     <!-- 리뷰
@@ -114,14 +119,12 @@
         </div>
     </section> -->
 
-
     <!-- footer 연결 -->
-    <footer data-include="../include/footer.html"></footer>
-
+    <footer data-include="include/footer.html"></footer>
 </body>
 
-<script src="../include/include.js"></script>
-<script src="../js/index.js"></script>
+<script src="include/include.js"></script>
+<script src="js/index.js"></script>
 
 
 </html>

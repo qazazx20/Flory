@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../include/include.css">
-    <link rel="stylesheet" href="../styles/goods.css">
+    <link rel="stylesheet" href="../include/include.css">
+    <link rel="stylesheet" href="/styles/goods.css">
     <!-- favicon  -->
     <link rel="shortcut icon" href="./../images/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -26,13 +26,52 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- include -->
+    <script src="../include/include.js"></script>
+
     <title>Flory</title>
 </head>
 
 <body>
 
     <!-- header 연결 -->
-    <header data-include="./../include/header.html"></header>
+    <header data-include="../include/header.html"></header>
+
+    <!-- 장바구니 -->
+    <div class="cartContainer">
+        <div class="cart">
+            <img src="./../images/cart.png">
+            <span class="iconQuantity">0</span>
+        </div>
+    </div>
+    <!-- 장바구니 창 -->
+    <div class="cartPage">
+        <h1>장바구니</h1>
+        <div class="cartList">
+        </div>
+        <div class="cartInfo">
+            <div>
+                <a>총 수량: <span class="cartQuantity">0</span></a>
+            </div>
+            <div>
+                <a>총 가격: <span class="cartPrice">0</span></a>
+            </div>
+        </div>
+        <div class="cartClose">
+            <h1>CLOSE</h1>
+        </div>
+    </div>
+
+    <hr>
+
+    <section class="listContainer">
+        <div class="listSort">
+            <span>높은가격순</span>
+            <span>낮은가격순</span>
+        </div>
+        <div class="list">
+        </div>
+    </section>
 
 
     <!-- footer 연결 -->
@@ -40,6 +79,6 @@
 
 </body>
 
-<script src="../include/include.js"></script>
+<script src="../js/goods.js"></script>
 
 </html>
